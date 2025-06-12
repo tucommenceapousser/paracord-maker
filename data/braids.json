@@ -12,5 +12,43 @@
     "max_cords": 3,
     "image": "fishtail.jpg",
     "instructions": "Fixer deux cordes centrales et tresser..."
+  },
+  {
+    "name": "Helmy First",
+    "cord_per_cm": 43,
+    "max_cords": 4,
+    "image": "helmy_first.jpg",
+    "instructions": "Utilise 4 cordes avec des longueurs différentes pour une symétrie colorée.",
+    "colors": [
+      {"name": "Viva La Vino Red", "length_cm": 14, "url": "https://www.paracord.eu/catalog/product/view/id/12452"},
+      {"name": "Pastel Pink", "length_cm": 9, "url": "https://www.paracord.eu/catalog/product/view/id/10470"},
+      {"name": "Turquoise", "length_cm": 9, "url": "https://www.paracord.eu/catalog/product/view/id/5490"},
+      {"name": "Viva La Vino Red", "length_cm": 11, "url": "https://www.paracord.eu/catalog/product/view/id/12452"}
+    ]
+  },
+  {
+    "name": "Parastoer",
+    "cord_per_cm": 33,
+    "max_cords": 3,
+    "image": "parastoer.jpg",
+    "instructions": "Tressage classique à 3 brins. Parfait pour les couleurs naturelles.",
+    "colors": [
+      {"name": "Hazelnut Brown", "length_cm": 13, "url": "https://www.paracord.eu/catalog/product/view/id/10059"},
+      {"name": "Turquoise", "length_cm": 10, "url": "https://www.paracord.eu/catalog/product/view/id/5490"},
+      {"name": "Cafè Latte", "length_cm": 10, "url": "https://www.paracord.eu/catalog/product/view/id/12718"}
+    ]
+  },
+  {
+    "name": "Luna's Wide Sanctified",
+    "cord_per_cm": 43,
+    "max_cords": 4,
+    "image": "luna_sanctified.jpg",
+    "instructions": "Tressage large et décoratif. Idéal pour bracelets visuels.",
+    "colors": [
+      {"name": "Hot Pink", "length_cm": 14, "url": "https://www.paracord.eu/catalog/product/view/id/15336"},
+      {"name": "Antique Gold", "length_cm": 10, "url": "https://www.paracord.eu/catalog/product/view/id/13827"},
+      {"name": "Carbonic", "length_cm": 9, "url": "https://www.paracord.eu/catalog/product/view/id/13419"},
+      {"name": "Turquoise", "length_cm": 10, "url": "https://www.paracord.eu/catalog/product/view/id/5490"}
+    ]
   }
 ]
