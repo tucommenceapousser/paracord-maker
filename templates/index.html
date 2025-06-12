@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>trhacknon Paracord Planner</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <h1>馃敆 trhacknon Paracord Planner 馃敆</h1>
+  <form id="planner" method="POST">
+    <label>Tour de poignet (cm):</label>
+    <input type="number" name="wrist" min="10" max="30" required>
+
+    <label>Type de tressage:</label>
+    <select name="knot">
+      {% for braid in braids %}
+        <option value="{{ braid.name }}">{{ braid.name }}</option>
+      {% endfor %}
+    </select>
+
+    <label>Nombre de cordes:</label>
+    <input type="number" name="cord_count" id="cord-count" min="1" max="5" value="2" required>
+
+    <div id="cord-colors"></div>
+
+    <button type="submit">Calculer</button>
+  </form>
+
+  {% if results %}
+  <div id="results">
+    <h2>R茅sultats :</h2>
+    <ul>
+      {% for r in results %}
+        <li>Corde {{ loop.index }} : {{ r }} cm</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <script>
+    function updateColors(n) {
+      const container = document.getElementById("cord-colors");
+      container.innerHTML = "";
+      for (let i = 0; i < n; i++) {
+        container.innerHTML += `
+          <label>Couleur corde ${i + 1}:</label>
+          <input type="color" name="color${i}" value="#${Math.floor(Math.random()*16777215).toString(16)}">
+        `;
+      }
+    }
+
+    document.getElementById("cord-count").addEventListener("input", e => {
+      updateColors(parseInt(e.target.value));
+    });
+
+    window.onload = () => {
+      updateColors(parseInt(document.getElementById("cord-count").value));
+    };
+  </script>
+</body>
+</html>
