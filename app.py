@@ -37,7 +37,9 @@ def calc_paracord(wrist_cm, braid_name, num_cords):
     if not braid:
         return []
     base = braid["cord_per_cm"]
-    return [round((wrist_cm + 3) * base, 2) for _ in range(num_cords)]
+    total_length = (wrist_cm + 3) * base
+    length_per_cord = total_length / num_cords
+    return [round(length_per_cord, 2) for _ in range(num_cords)]
 
 # Route principale sécurisée
 @app.route("/", methods=["GET", "POST"])
