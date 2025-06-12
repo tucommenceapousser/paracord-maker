@@ -1,0 +1,30 @@
+
+body {
+  background-color: #0a0a0a;
+  color: #39ff14;
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+}
+h1 {
+  color: #ff00ff;
+  text-align: center;
+}
+input, select, button {
+  background-color: #1a1a1a;
+  color: #39ff14;
+  border: 1px solid #39ff14;
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+}
+button {
+  background-color: #000;
+  border: 2px solid #ff00ff;
+  cursor: pointer;
+}
+#results {
+  margin-top: 20px;
+  background-color: #111;
+  padding: 10px;
+  border: 1px solid #ff00ff;
+}
