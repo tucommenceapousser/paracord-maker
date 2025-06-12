@@ -1,14 +1,14 @@
 [
   {
     "name": "Cobra",
-    "cord_per_cm": 7.5,
+    "cord_per_cm": 15,
     "max_cords": 2,
     "image": "cobra.png",
     "instructions": "Commence avec une boucle centrale..."
   },
   {
     "name": "Fishtail",
-    "cord_per_cm": 6.9,
+    "cord_per_cm": 14,
     "max_cords": 3,
     "image": "fishtail.png",
     "instructions": "Fixer deux cordes centrales et tresser..."
