@@ -109,3 +109,21 @@ label {
   color: #210000;
   box-shadow: 0 0 10px #ff5555aa;
 }
+
+.braid-card {
+  border: 1px solid #444;
+  background-color: #111;
+  color: #eee;
+  padding: 1em;
+  margin: 1.5em 0;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #0ff2;
+}
+
+.braid-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+}
