@@ -8,7 +8,7 @@ import json
 
 # Initialisation Flask
 app = Flask(__name__)
-app.secret_key = 'changeme-trhacknon'  # À remplacer par une vraie clé secrète en prod
+app.secret_key = 'Trh@ckn0n'  # À remplacer par une vraie clé secrète en prod
 Talisman(app)
 
 # Sécurité des cookies
@@ -51,4 +51,4 @@ def index():
     return render_template("index.html", form=form, results=results)
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=False,host="0.0.0.0")
