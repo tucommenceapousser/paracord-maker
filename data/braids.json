@@ -25,7 +25,7 @@
     "name": "Helmy First",
     "cord_per_cm": 41.5,
     "max_cords": 4,
-    "image": "helmy_first.jpg",
+    "image": "helmy.webp",
     "instructions": "Utilise 4 cordes avec des longueurs différentes pour une symétrie colorée.",
     "colors": [
       {"name": "Viva La Vino Red", "length_cm": 13.5, "url": "https://www.paracord.eu/catalog/product/view/id/12452"},
