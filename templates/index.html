@@ -63,23 +63,17 @@
     </section>
     {% endif %}
 
-    <section id="braid-list">
-      <h2>🌈 Tressages disponibles</h2>
-      {% for braid in breads %}
-        <div class="braid-card">
-          <h3>{{ braid.name }}</h3>
-          <img src="{{ url_for('static', filename='img/' ~ braid.image) }}" alt="{{ braid.name }}" class="braid-img" />
-          <p><strong>Instructions :</strong> {{ braid.instructions }}</p>
-          <ul>
-            {% for color in braid.colors %}
-              <li>
-                <a href="{{ color.url }}" target="_blank">{{ color.name }}</a> : {{ color.length_cm }} cm
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      {% endfor %}
-    </section>
+<h2>🌈 Tressages disponibles</h2>
+<ul class="braid-list">
+  {% for braid in braids %}
+    <li>
+      <strong>{{ braid.name }}</strong>
+      {% if braid.image %}
+        <br><img src="{{ url_for('static', filename='img/' ~ braid.image) }}" alt="{{ braid.name }}" style="max-width:200px;">
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
 
   </div>
 </body>
