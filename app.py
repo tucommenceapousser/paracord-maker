@@ -22,7 +22,7 @@ with open("data/braids.json", "r", encoding="utf-8") as f:
 
 # Formulaire sécurisé avec Flask-WTF
 class BraidForm(FlaskForm):
-    wrist = FloatField("Tour de poignet (cm)", validators=[DataRequired(), NumberRange(min=10, max=30)])
+    wrist = FloatField("Longueur du tressage apres deduction de la boucle (cm)", validators=[DataRequired(), NumberRange(min=10, max=30)])
     knot = SelectField("Type de tressage", validators=[DataRequired()])
     cord_count = IntegerField("Nombre de cordes", validators=[DataRequired(), NumberRange(min=1, max=5)])
     submit = SubmitField("Calculer")
