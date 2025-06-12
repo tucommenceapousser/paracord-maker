@@ -38,7 +38,7 @@
     "name": "Parastoer",
     "cord_per_cm": 33,
     "max_cords": 3,
-    "image": "parastoer.jpg",
+    "image": "parastoer.webp",
     "instructions": "Tressage classique à 3 brins. Parfait pour les couleurs naturelles.",
     "colors": [
       {"name": "Hazelnut Brown", "length_cm": 13, "url": "https://www.paracord.eu/catalog/product/view/id/10059"},
@@ -50,7 +50,7 @@
     "name": "Luna's Wide Sanctified",
     "cord_per_cm": 43,
     "max_cords": 4,
-    "image": "luna_sanctified.jpg",
+    "image": "lunaswide.webp",
     "instructions": "Tressage large et décoratif. Idéal pour bracelets visuels.",
     "colors": [
       {"name": "Hot Pink", "length_cm": 14, "url": "https://www.paracord.eu/catalog/product/view/id/15336"},
@@ -63,7 +63,7 @@
     "name": "Flying Cookie",
     "cord_per_cm": 41,
     "max_cords": 4,
-    "image": "flying_cookie.jpg",
+    "image": "flying.webp",
     "instructions": "Motif doux et arrondi, parfait pour des bracelets élégants.",
     "colors": [
       {"name": "Pearl Rosé", "length_cm": 14, "url": "https://www.paracord.eu/catalog/product/view/id/14419"},
@@ -76,7 +76,7 @@
     "name": "Loco",
     "cord_per_cm": 51,
     "max_cords": 5,
-    "image": "matchmaker.paracord.eu/showcase/Loco/10470-5741-10469-12718-5966.webp?width=400",
+    "image": "loco.webp",
     "instructions": "Design vibrant à 5 couleurs pour un effet multicolore dynamique.",
     "colors": [
       {"name": "Cafè Latte", "length_cm": 13, "url": "https://www.paracord.eu/catalog/product/view/id/12718"},
