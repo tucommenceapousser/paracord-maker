@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, escape, flash
+from flask import Flask, render_template, request, flash
+from markupsafe import escape
 from flask_wtf import FlaskForm
 from wtforms import FloatField, SelectField, IntegerField, SubmitField
 from wtforms.validators import DataRequired, NumberRange
