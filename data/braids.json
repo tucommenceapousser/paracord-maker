@@ -13,7 +13,7 @@
   {
     "name": "Fishtail",
     "cord_per_cm": 14,
-    "max_cords": 3,
+    "max_cords": 2,
     "image": "fishtail.jpg",
     "instructions": "Fixer deux cordes centrales et tresser...",
     "colors": [
