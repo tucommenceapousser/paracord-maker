@@ -4,7 +4,11 @@
     "cord_per_cm": 15,
     "max_cords": 2,
     "image": "cobra.jpg",
-    "instructions": "Commence avec une boucle centrale..."
+    "instructions": "Commence avec une boucle centrale...",
+    "colors": [
+      {"name": "Viva La Vino Red", "length_cm": 8, "url": "https://www.paracord.eu/catalog/product/view/id/12452"},
+      {"name": "Viva La Vino Red", "length_cm": 7, "url": "https://www.paracord.eu/catalog/product/view/id/12452"}
+    ]
   },
   {
     "name": "Fishtail",
