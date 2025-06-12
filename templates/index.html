@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-  <h1>馃敆 trhacknon Paracord Planner 馃敆</h1>
+  <h1>🔗 trhacknon Paracord Planner 🔗</h1>
   <form id="planner" method="POST">
     <label>Tour de poignet (cm):</label>
     <input type="number" name="wrist" min="10" max="30" required>
@@ -29,7 +29,7 @@
 
   {% if results %}
   <div id="results">
-    <h2>R茅sultats :</h2>
+    <h2>Résultats :</h2>
     <ul>
       {% for r in results %}
         <li>Corde {{ loop.index }} : {{ r }} cm</li>
