@@ -58,5 +58,33 @@
       {"name": "Carbonic", "length_cm": 9, "url": "https://www.paracord.eu/catalog/product/view/id/13419"},
       {"name": "Turquoise", "length_cm": 10, "url": "https://www.paracord.eu/catalog/product/view/id/5490"}
     ]
+  },
+  {
+    "name": "Flying Cookie",
+    "cord_per_cm": 41,
+    "max_cords": 4,
+    "image": "flying_cookie.jpg",
+    "instructions": "Motif doux et arrondi, parfait pour des bracelets élégants.",
+    "colors": [
+      {"name": "Pearl Rosé", "length_cm": 14, "url": "https://www.paracord.eu/catalog/product/view/id/14419"},
+      {"name": "Pastel Pink", "length_cm": 10, "url": "https://www.paracord.eu/catalog/product/view/id/10470"},
+      {"name": "Holy Guacamole", "length_cm": 9, "url": "https://www.paracord.eu/catalog/product/view/id/12409"},
+      {"name": "Green Pepper", "length_cm": 8, "url": "https://www.paracord.eu/catalog/product/view/id/9359"}
+    ]
+  },
+  {
+    "name": "Loco",
+    "cord_per_cm": 51,
+    "max_cords": 5,
+    "image": "loco.jpg",
+    "instructions": "Design vibrant à 5 couleurs pour un effet multicolore dynamique.",
+    "colors": [
+      {"name": "Cafè Latte", "length_cm": 13, "url": "https://www.paracord.eu/catalog/product/view/id/12718"},
+      {"name": "Deep Purple", "length_cm": 8, "url": "https://www.paracord.eu/catalog/product/view/id/5966"},
+      {"name": "Fox Orange", "length_cm": 10, "url": "https://www.paracord.eu/catalog/product/view/id/5741"},
+      {"name": "Passion Pink", "length_cm": 7, "url": "https://www.paracord.eu/catalog/product/view/id/10469"},
+      {"name": "Pastel Pink", "length_cm": 13, "url": "https://www.paracord.eu/catalog/product/view/id/10470"}
+    ]
   }
 ]
+
