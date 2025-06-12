@@ -1,62 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>trhacknon Paracord Planner</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <meta charset="UTF-8" />
+  <title>𓀐 trhacknon Paracord Planner 𓀐</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 </head>
 <body>
-  <h1>𓀐 trhacknon Paracord Planner 𓀐</h1>
-  <form id="planner" method="POST">
-    <label>Tour de poignet (cm):</label>
-    <input type="number" name="wrist" min="10" max="30" required>
+  <div class="container">
+    <h1>𓀐 trhacknon Paracord Planner 𓀐</h1>
 
-    <label>Type de tressage:</label>
-    <select name="knot">
-      {% for braid in braids %}
-        <option value="{{ braid.name }}">{{ braid.name }}</option>
-      {% endfor %}
-    </select>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="flash-messages">
+          {% for category, message in messages %}
+            <div class="flash flash-{{ category }}">{{ message }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
 
-    <label>Nombre de cordes:</label>
-    <input type="number" name="cord_count" id="cord-count" min="1" max="5" value="2" required>
+    <form method="POST" novalidate>
+      {{ form.csrf_token }}
 
-    <div id="cord-colors"></div>
+      <label for="wrist">{{ form.wrist.label }}</label>
+      {{ form.wrist(class="input-field") }}
+      {% if form.wrist.errors %}
+        <div class="error">{{ form.wrist.errors[0] }}</div>
+      {% endif %}
 
-    <button type="submit">Calculer</button>
-  </form>
+      <label for="knot">{{ form.knot.label }}</label>
+      {{ form.knot(class="input-field") }}
+      {% if form.knot.errors %}
+        <div class="error">{{ form.knot.errors[0] }}</div>
+      {% endif %}
 
-  {% if results %}
-  <div id="results">
-    <h2>Résultats :</h2>
-    <ul>
-      {% for r in results %}
-        <li>Corde {{ loop.index }} : {{ r }} cm</li>
-      {% endfor %}
-    </ul>
+      <label for="cord_count">{{ form.cord_count.label }}</label>
+      {{ form.cord_count(class="input-field") }}
+      {% if form.cord_count.errors %}
+        <div class="error">{{ form.cord_count.errors[0] }}</div>
+      {% endif %}
+
+      <button type="submit" class="btn-submit">{{ form.submit.label.text }}</button>
+    </form>
+
+    {% if results %}
+    <section id="results">
+      <h2>Résultats :</h2>
+      <ul>
+        {% for r in results %}
+          <li>Corde {{ loop.index }} : {{ r }} cm</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
   </div>
-  {% endif %}
-
-  <script>
-    function updateColors(n) {
-      const container = document.getElementById("cord-colors");
-      container.innerHTML = "";
-      for (let i = 0; i < n; i++) {
-        container.innerHTML += `
-          <label>Couleur corde ${i + 1}:</label>
-          <input type="color" name="color${i}" value="#${Math.floor(Math.random()*16777215).toString(16)}">
-        `;
-      }
-    }
-
-    document.getElementById("cord-count").addEventListener("input", e => {
-      updateColors(parseInt(e.target.value));
-    });
-
-    window.onload = () => {
-      updateColors(parseInt(document.getElementById("cord-count").value));
-    };
-  </script>
 </body>
 </html>
