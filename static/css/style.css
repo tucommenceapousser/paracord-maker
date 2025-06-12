@@ -121,9 +121,11 @@ label {
 }
 
 .braid-img {
-  max-width: 100%;
+  width: 150px;
   height: auto;
+  object-fit: contain;
   display: block;
   margin: 10px auto;
   border-radius: 8px;
+  box-shadow: 0 0 8px #00ffffaa;
 }
