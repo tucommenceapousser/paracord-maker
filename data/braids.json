@@ -23,14 +23,14 @@
   },
   {
     "name": "Helmy First",
-    "cord_per_cm": 43,
+    "cord_per_cm": 41.5,
     "max_cords": 4,
     "image": "helmy_first.jpg",
     "instructions": "Utilise 4 cordes avec des longueurs différentes pour une symétrie colorée.",
     "colors": [
-      {"name": "Viva La Vino Red", "length_cm": 14, "url": "https://www.paracord.eu/catalog/product/view/id/12452"},
-      {"name": "Pastel Pink", "length_cm": 9, "url": "https://www.paracord.eu/catalog/product/view/id/10470"},
-      {"name": "Turquoise", "length_cm": 9, "url": "https://www.paracord.eu/catalog/product/view/id/5490"},
+      {"name": "Viva La Vino Red", "length_cm": 13.5, "url": "https://www.paracord.eu/catalog/product/view/id/12452"},
+      {"name": "Pastel Pink", "length_cm": 8.5, "url": "https://www.paracord.eu/catalog/product/view/id/10470"},
+      {"name": "Turquoise", "length_cm": 8.5, "url": "https://www.paracord.eu/catalog/product/view/id/5490"},
       {"name": "Viva La Vino Red", "length_cm": 11, "url": "https://www.paracord.eu/catalog/product/view/id/12452"}
     ]
   },
