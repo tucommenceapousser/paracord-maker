@@ -36,10 +36,16 @@ def calc_paracord(wrist_cm, braid_name, num_cords):
     braid = next((b for b in BRAID_DB if b["name"] == braid_name), None)
     if not braid:
         return []
+
+    # Cas où on a des couleurs prédéfinies avec longueurs fixes
+    if "colors" in braid:
+        return braid["colors"]
+
+    # Sinon on calcule génériquement
     base = braid["cord_per_cm"]
-    total_length = (wrist_cm + 3) * base
-    length_per_cord = total_length / num_cords
-    return [round(length_per_cord, 2) for _ in range(num_cords)]
+    total_length = (wrist_cm + 3) * base  # ajout de marge
+    length_per_cord = round(total_length / num_cords, 2)
+    return [{"length_cm": length_per_cord} for _ in range(num_cords)]
 
 # Route principale sécurisée
 @app.route("/", methods=["GET", "POST"])
