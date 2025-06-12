@@ -48,7 +48,16 @@
       <h2>Résultats :</h2>
       <ul>
         {% for r in results %}
-          <li>Corde {{ loop.index }} : {{ r }} cm</li>
+          <li>
+            {% if r.name %}
+              <strong>{{ r.name }}</strong> : {{ r.length_cm }} cm
+              {% if r.url %}
+                – <a href="{{ r.url }}" target="_blank">Voir corde</a>
+              {% endif %}
+            {% else %}
+              Corde {{ loop.index }} : {{ r.length_cm }} cm
+            {% endif %}
+          </li>
         {% endfor %}
       </ul>
     </section>
