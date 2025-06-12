@@ -51,7 +51,7 @@ def index():
         results = calc_paracord(wrist, knot, cord_count)
     elif request.method == "POST":
         flash("Veuillez corriger les erreurs dans le formulaire", "danger")
-    return render_template("index.html", form=form, results=results)
+    return render_template("index.html", form=form, results=results, braids=BRAID_DB)
 
 if __name__ == "__main__":
     app.run(debug=False,host="0.0.0.0")
