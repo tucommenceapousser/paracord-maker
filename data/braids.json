@@ -15,7 +15,11 @@
     "cord_per_cm": 14,
     "max_cords": 3,
     "image": "fishtail.jpg",
-    "instructions": "Fixer deux cordes centrales et tresser..."
+    "instructions": "Fixer deux cordes centrales et tresser...",
+    "colors": [
+      {"name": "Viva La Vino Red", "length_cm": 7, "url": "https://www.paracord.eu/catalog/product/view/id/12452"},
+      {"name": "Pastel Pink", "length_cm": 7, "url": "https://www.paracord.eu/catalog/product/view/id/10470"}
+    ]
   },
   {
     "name": "Helmy First",
